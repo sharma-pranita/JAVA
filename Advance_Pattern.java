@@ -115,7 +115,6 @@ public class Advance_Pattern {
   //   }
   // }
 
-
   //  public static void Rhombus(int n) {
   //   //Approach2
   //   for (int i = 1; i <= n; i++) {
@@ -131,24 +130,23 @@ public class Advance_Pattern {
   //     System.out.println();
   //   }
   // }
-  
 
-  public static void HollowRhom(int n){
-    for(int i=1;i<=n;i++){
-      for(int j=1;j<=9;j++){
-        if((i==1&&j>=5)||((i+j)%2==0)||(i==5&&j<=5)){
+  public static void HollowRhom(int n) {
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= n - i; j++) {
+        System.out.print(" ");
+      }
+
+      for (int j = 1; j <= n; j++) {
+        if (i == 1 || i == n || j == 1 || j == n) {
           System.out.print("*");
-        }
-        else{
+        } else {
           System.out.print(" ");
         }
       }
       System.out.println();
     }
   }
-
-
- 
 
   public static void main(String[] args) {
     //    hollowRect(4,5 );
