@@ -4,5 +4,10 @@ public class Basic {
         System.out.println("***");
         System.out.println("**");
         System.out.println("*");
+
+        System.out.println("****");
+        System.out.println("***");
+        
+        
     }
 }
